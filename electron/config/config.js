@@ -1,5 +1,5 @@
 module.exports =  {
-    appVersion:'1.0.0',
+    version:'1.0.0',
     title:'vue技术交流',// 应用名称。
     width:800,//窗口的宽度
     height:600,//窗口的高度

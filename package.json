@@ -1,7 +1,6 @@
 {
-  "name": "mshare-cms",
-  "private": true,
-  "version": "0.0.0",
+  "name": "elecrton-template-vue3",
+  "version": "1.0.0",
   "author": "小C",
   "main": "electron/electron.js",
   "scripts": {
@@ -10,7 +9,8 @@
     "start": "concurrently -k 'vite' 'cross-env IS_DEV=dev electron-forge start'",
     "package": "electron-forge package",
     "build:mac": "vite build | electron-forge make --platform darwin",
-    "build:win": "vite build | electron-forge make --arch x64 --platform win32"
+    "build:win": "vite build | electron-forge make --arch x64 --platform win32",
+    "publish": "electron-forge publish --from-dry-run"
   },
   "dependencies": {
     "@vueuse/core": "^9.3.0",
@@ -24,6 +24,7 @@
     "@electron-forge/cli": "^6.0.1",
     "@electron-forge/maker-squirrel": "^6.0.1",
     "@electron-forge/maker-zip": "^6.0.1",
+    "@electron-forge/publisher-nucleus": "^6.0.3",
     "@vitejs/plugin-vue": "^3.1.0",
     "concurrently": "^7.5.0",
     "cross-env": "^7.0.3",

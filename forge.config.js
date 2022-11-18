@@ -1,8 +1,9 @@
-const {title,appVersion} = require('./electron/config/config.js')
+const {title,version} = require('./electron/config/config.js')
 module.exports = {
   packagerConfig: {
+    asar:true,
     name:title,
-    appVersion
+    appVersion:version,
   },
   rebuildConfig: {},
   makers: [
